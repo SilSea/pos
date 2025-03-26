@@ -1,0 +1,19 @@
+{
+  "name": "pos",
+  "version": "1.0.0",
+  "description": "pos for management store",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SilSea/pos.git"
+  },
+  "author": "Nattawut Poolkhet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SilSea/pos/issues"
+  },
+  "homepage": "https://github.com/SilSea/pos#readme"
+}
