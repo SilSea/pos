@@ -1,0 +1,195 @@
+/* Import Font*/
+@font-face {
+    font-family: 'Pridi-Bold';
+    src: url('/fonts/Pridi-Bold.ttf');
+}
+@font-face {
+    font-family: 'Pridi-ExtraLight';
+    src: url('/fonts/Pridi-ExtraLight.ttf');
+}
+@font-face {
+    font-family: 'Pridi-Light';
+    src: url('/fonts/Pridi-Light.ttf');
+}
+@font-face {
+    font-family: 'Pridi-Medium';
+    src: url('/fonts/Pridi-Medium.ttf');
+}
+@font-face {
+    font-family: 'Pridi-Regular';
+    src: url('/fonts/Pridi-Regular.ttf');
+}
+@font-face {
+    font-family: 'Pridi-SemiBold';
+    src: url('/fonts/Pridi-SemiBold.ttf');
+}
+
+/* VarSetting */
+:root {
+    --bg-color: #e2e1e1e0;
+    --bg-navbar-color: white;
+    --bg-menu-color: white;
+}
+
+/* Body */
+body {
+    margin: 0;
+    max-width: 1280px;
+    max-height: 800px;
+    background-color: var(--bg-color);
+    font-family: 'Pridi-Regular';
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    width: 1280px;
+    height: 70px;
+    border-bottom: 2px solid;
+    border-color: var(--bg-color);
+    background-color: var(--bg-navbar-color);
+}
+.navbar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Pridi-SemiBold';
+    font-size: xx-large;
+    width: 350px;
+    height: 100%;
+}
+.navbar-searchbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 500px;
+    height: 100%;
+}
+.input-searchbox {
+    width: 96%;
+    height: 50%;
+    margin: 0;
+    padding-left: 10px;
+    background-color: var(--bg-color);
+    border: 0px;
+    border-radius: 5px;
+}
+.search-btn {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    left: 92%;
+    top: 20;
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    border-color: none;
+    background: transparent;
+}
+.navbar-menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 430px;
+    height: 100%;
+}
+.reload-btn,.fullscreen-btn {
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+    border: transparent;
+    border-radius: 5px;
+}
+.reload-btn:hover, .fullscreen-btn:hover,.search-btn:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 1276px;
+    border-left: 2px solid;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+    border-color: var(--bg-menu-color);
+    border-radius: 5px;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 72px;
+    height: 726px;
+    border-right: 2px solid;
+    border-color: var(--bg-menu-color);
+    border-radius: 5px;
+    background-color: var(--bg-menu-color);
+}
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 85px;
+}
+.menu-item > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    height: 85%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    font-family: 'Pridi-Light';
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.menu-item > a:hover{
+    color: orange;
+    border: 2px solid orange;
+}
+.menu-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    height: 85px;
+}
+.menu-active > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    height: 85%;
+    border: 2px solid orange;
+    border-radius: 5px;
+    font-family: 'Pridi-Light';
+    font-size: 20px;
+    color: orange;
+    text-decoration: none;
+}
+
+/* ProductOrder */
+.product-ordershow {
+    width: 800px;
+    height: 726px;
+}
+
+.product-order {
+    width: 400px;
+    height: 726px;
+    border-left: 2px solid;
+    border-color: var(--bg-menu-color);
+    border-radius: 5px;
+    background-color: var(--bg-menu-color);
+}
