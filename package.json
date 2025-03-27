@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "pos for management store",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/SilSea/pos/issues"
   },
-  "homepage": "https://github.com/SilSea/pos#readme"
+  "homepage": "https://github.com/SilSea/pos#readme",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "moment-timezone": "^0.5.48",
+    "pg": "^8.14.1"
+  }
 }
