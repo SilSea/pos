@@ -1,18 +1,18 @@
 <div class="menu">
-    <div class="menu-active">
-        <a href="/">
+    <div class="<%= (currentUrl.startsWith('/order')) ? 'menu-active' : 'menu-item' %>">
+        <a href="/order">
             <i class="fa-solid fa-cash-register"></i>
             <span>คิดเงิน</span>
         </a>
     </div>
-    <div class="menu-item">
-        <a href="/">
+    <div class="<%= (currentUrl.startsWith('/product')) ? 'menu-active' : 'menu-item' %>">
+        <a href="/product">
             <i class="fa-solid fa-cash-register"></i>
             <span>สินค้า</span>
         </a>
     </div>
-    <div class="menu-item">
-        <a href="/">
+    <div class="<%= (currentUrl.startsWith('/summary')) ? 'menu-active' : 'menu-item' %>">
+        <a href="/summary">
             <i class="fa-solid fa-chart-pie-simple"></i>
             <span>สรุป</span>
         </a>

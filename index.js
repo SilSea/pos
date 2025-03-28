@@ -4,6 +4,9 @@ import bodyParser from 'body-parser';
 import moment from 'moment-timezone';
 import req from 'express/lib/request.js';
 import { render } from 'ejs';
+import orderRoute from './routes/order.js';
+import productRoute from './routes/product.js';
+import summaryRoute from './routes/summary.js';
 
 const app = express();
 const port = process.env.port || 3000;
@@ -16,8 +19,15 @@ app.use(express.static('assets'));
 
 // ตั้งค่าหน้าแรก
 app.get('/', async (req, res) =>{
-    res.render('pages/index.ejs');
+    res.redirect('/order');
 });
+
+// ตั้งค่าไปหน้าต่างๆของ Order
+app.use('/', orderRoute);
+// ตั้งค่าไปหน้าต่างๆของ Product
+app.use('/', productRoute);
+// ตั้งค่าไปหน้าต่างๆของ Summary
+app.use('/', summaryRoute)
 
 // Run Server
 app.listen(port,() => {
