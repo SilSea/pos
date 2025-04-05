@@ -99,14 +99,18 @@ body {
     width: 643px;
     height: 100%;
 }
-.reload-btn,.fullscreen-btn {
+.close-btn {
+    color: white;
+    background: red;
+}
+.navbar-menu-btn {
     width: 35px;
     height: 35px;
     margin-right: 15px;
     border: transparent;
     border-radius: 5px;
 }
-.reload-btn:hover, .fullscreen-btn:hover,.search-btn:hover {
+.navbar-menu-btn:hover {
     cursor: pointer;
     opacity: 0.5;
 }
@@ -123,6 +127,7 @@ body {
     border-color: var(--bg-menu-color);
     border-radius: 5px;
 }
+
 
 /* Menu */
 .menu {
@@ -183,13 +188,54 @@ body {
     color: orange;
     text-decoration: none;
 }
+.menu-last {
+    margin-top: auto;
+}
 
 /* ProductOrderShow */
 .product-ordershow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
     width: 1370px;
     height: 1006px;
 }
-
+.iframe-product {
+    width: 100%;
+    height: 100%;
+}
+.product-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.product-card {
+    width: 150px;
+    height: 150px;
+    margin: 9px;
+    padding: 0;
+    background-color: white;
+}
+.product-card-img {
+    width: 100%;
+    height: 90px;
+    margin: 0;
+    padding: 0;
+}
+.product-card-img > img {
+    width: 100%;
+    height: 100%;
+}
+.product-card-name {
+    font-weight: bolder;
+    text-align: center;
+}
+.product-card-price {
+    font-size: 15px;
+    text-align: center;
+}
 
 /* ProductOrder */
 .product-order {
@@ -202,27 +248,57 @@ body {
 }
 
 
-
 /* 1280*800 */
 @media (max-width: 1280px) {
     body {
         max-height: 800px;
     }
 
+    /* Navbar 1280*800 */
     .navbar {
         height: 70px;
     }
-
+    /* Menu 1280*800 */
     .menu {
         height: 726px;
     }
 
+    /* ProductOrder 1280*800 */
     .product-ordershow {
-
+        width: 1200px;
         height: 726px;
     }
+    .product-card-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .product-card {
+        width: 180px;
+        height: 180px;
+        margin: 5px 5px 5px 5px;
+        padding: 0;
+        background-color: white;
+    }
+    .product-card-img {
+        width: 100%;
+        height: 120px;
+        margin: 0;
+        padding: 0;
+    }
+    .product-card-name {
+        font-size: 11px;
+        font-weight: bolder;
+        text-align: center;
+    }
+    .product-card-price {
+        font-size: 10px;
+        text-align: center;
+    }
 
+    /* ProductOrder 1280*800 */
     .product-order {
+        width: 570px;
         height: 726px;
     }
 }

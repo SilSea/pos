@@ -1,20 +1,26 @@
 <div class="menu">
     <div class="<%= (currentUrl.startsWith('/order')) ? 'menu-active' : 'menu-item' %>">
-        <a href="/order">
+        <a href="/order" class="keep-fullscreen">
             <i class="fa-solid fa-cash-register"></i>
             <span>คิดเงิน</span>
         </a>
     </div>
     <div class="<%= (currentUrl.startsWith('/product')) ? 'menu-active' : 'menu-item' %>">
-        <a href="/product">
+        <a href="/product" class="keep-fullscreen">
             <i class="fa-solid fa-cash-register"></i>
             <span>สินค้า</span>
         </a>
     </div>
     <div class="<%= (currentUrl.startsWith('/summary')) ? 'menu-active' : 'menu-item' %>">
-        <a href="/summary">
+        <a href="/summary" class="keep-fullscreen">
             <i class="fa-solid fa-chart-pie-simple"></i>
             <span>สรุป</span>
+        </a>
+    </div>
+    <div class="menu-item menu-last">
+        <a href="/logout" class="keep-fullscreen">
+            <i class="fa-solid fa-left-from-bracket"></i>
+            <span>ออก</span>
         </a>
     </div>
 </div>
